@@ -1,0 +1,15 @@
+# Node.js
+my-app/node_modules
+my-app/build
+
+# Spring Boot
+my-springboot-app/target
+
+# Python
+venv
+__pycache__
+*.pyc
+
+# Other
+.env
+.DS_Store
