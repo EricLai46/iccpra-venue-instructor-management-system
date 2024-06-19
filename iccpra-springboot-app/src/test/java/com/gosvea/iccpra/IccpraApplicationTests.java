@@ -3,7 +3,7 @@ package com.gosvea.iccpra;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(classes = IccpraApplication.class)
+@SpringBootTest()
 public class IccpraApplicationTests {
 
 	@Test
