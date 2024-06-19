@@ -1,12 +1,11 @@
 package main.java.com.gosvea.iccpra.controller;
 
-import javax.naming.spi.DirStateFactory.Result;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping; // 确认导入
 import org.springframework.web.bind.annotation.RestController; // 确认导入
 
 import main.java.com.gosvea.iccpra.pojo.Icpie;
+import main.java.com.gosvea.iccpra.pojo.Result;
 import main.java.com.gosvea.iccpra.service.IcpieService;
 
 @RestController
@@ -19,7 +18,7 @@ public class IcpieController {
     public Result rergister(String icpiename, String password) {
 
         Icpie ie = icpieService.findByIcpieName(icpiename);
-        if (ie = null) {
+        if (ie == null) {
             icpieService.registerNewIcpie(icpiename, password);
             return Result.success();
         } else {
